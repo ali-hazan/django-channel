@@ -25,8 +25,8 @@ SECRET_KEY = 'django-insecure-!2n5=8qarmrti(12k5jh!=0p!l#8shqsru8eqsb-#jgsas!26k
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ["localhost","127.0.0.1"]
+CORS_ALLOW_ALL_ORIGINS = True
 
 # Application definition
 
@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'corsheaders',
     'chat',
+    'game',
 ]
 
 MIDDLEWARE = [
